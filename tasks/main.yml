@@ -22,5 +22,7 @@
 - include_tasks: configure.yml
 - include_tasks: secure-installation.yml
 - include_tasks: databases.yml
+  tags: new
 - include_tasks: users.yml
+  tags: new
 - include_tasks: replication.yml
