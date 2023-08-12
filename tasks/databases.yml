@@ -7,4 +7,5 @@
     state: "{{ item.state | default('present') }}"
     target: "{{ item.target | default(omit) }}"
   with_items: "{{ mysql_databases }}"
-  tags: new
+  tags:
+    - new
